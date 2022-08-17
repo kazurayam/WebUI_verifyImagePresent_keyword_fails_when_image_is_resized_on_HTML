@@ -171,7 +171,7 @@ then the `WebUI.verifyImagePresent() keyword will always fail to find the image 
 
 Most probably, an `<img>` tag has a CSS property that resizes image. The `WebUI.verifyImagePresent()` keyword assumes you not to do it! --- I do not think this assumption is practical. Therefore I would argue that katalon users should not use `WebUI.verifyImagePresent` keyword at all.
 
-I haven't checked it but I guess `Mobile.verifyImagePresent` keyword is similar. You shouldn't use it.
+I haven't checked it but I guess `Mobile.verifyImagePresent` keyword is similar. You should disregard it.
 
 
 
