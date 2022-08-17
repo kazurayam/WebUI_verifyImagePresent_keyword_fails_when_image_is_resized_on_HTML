@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>GoogleLogo</name>
+   <tag></tag>
+   <elementGuidId>4c4f18c2-edfb-40a7-aa13-df4b935a1a78</elementGuidId>
+   <imagePath>GoogleGLogo-1.png</imagePath>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value></value>
+      </entry>
+      <entry>
+         <key>IMAGE</key>
+         <value>GoogleGLogo-1.png</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>IMAGE</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+</WebElementEntity>

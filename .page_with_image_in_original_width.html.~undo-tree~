@@ -1,0 +1,12 @@
+(undo-tree-save-format-version . 1)
+"be741579012f02c36ea43f2c9fe42038980f4f1a"
+[nil nil nil nil (25340 58750 683637 0) 0 nil]
+([nil nil ((172 . 177) (#("\"" 0 1 (tag-name "p" tag-type start)) . 173) (172 . 173) (164 . 173) (t 25340 58542 696037 68000)) nil (25340 58750 683636 0) 0 nil])
+([nil nil ((177 . 184)) nil (25340 58750 683634 0) 0 nil])
+([nil nil (("<" . -202) (undo-tree-id0 . -1) (undo-tree-id1 . -1) (undo-tree-id2 . -1) ("/" . -203) (undo-tree-id3 . -1) (undo-tree-id4 . -1) (undo-tree-id5 . -1) (#("p" 0 1 (tag-name "p" tag-type end font-lock-face web-mode-html-tag-face)) . -204) (undo-tree-id6 . -1) (undo-tree-id7 . -1) (undo-tree-id8 . -1) (#(">" 0 1 (tag-name "p" tag-type end tag-end t font-lock-face web-mode-html-tag-bracket-face)) . -205) (undo-tree-id9 . -1) (undo-tree-id10 . -1) (undo-tree-id11 . -1) 206) nil (25340 58750 683632 0) 0 nil])
+([nil nil ((202 . 203)) nil (25340 58750 683591 0) 0 nil])
+([nil nil ((272 . 281)) nil (25340 58750 683590 0) 0 nil])
+([nil nil ((281 . 282)) nil (25340 58750 683589 0) 0 nil])
+([nil nil ((282 . 285)) nil (25340 58750 683587 0) 0 nil])
+([nil current ((" " . 202) 285) nil (25340 58750 683580 0) 0 nil])
+nil
