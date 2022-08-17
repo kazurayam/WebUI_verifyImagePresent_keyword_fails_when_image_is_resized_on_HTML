@@ -151,7 +151,7 @@ Caused by: com.kms.katalon.core.exception.StepFailedException: Image: 'GoogleGLo
 
 ## Why WebUI.verifyImagePresent fails in TC2?
 
-You can read the Groovy source code of `WebUI.verifyImagePresent` keyword [here](https://github.com/katalon-studio/katalon-studio-testing-framework/blob/master/Include/scripts/groovy/com/kms/katalon/core/webui/keyword/builtin/VerifyImagePresentKeyword.groovy). If you read the code, you find how this keyword works.
+You can read the Groovy source code of `WebUI.verifyImagePresent` keyword [here](https://github.com/katalon-studio/katalon-studio-testing-framework/blob/master/Include/scripts/groovy/com/kms/katalon/core/webui/keyword/builtin/VerifyImagePresentKeyword.groovy). If you read the code, you would find how this keyword works.
 
 1. The keyword requires user to give reference to the original image file.
 2. The keyword takes a full page screenshot of the target web page.
@@ -159,7 +159,11 @@ You can read the Groovy source code of `WebUI.verifyImagePresent` keyword [here]
 
 Now you should review this design. This design naively assumes that *the original image is rendered "as is" without any resizing in the web page.*
 
-If the target HTML specifies image to be resized like this `<img src="GoogleGLogo-1.png" style="width:25%;" alt="logo">`, then the `WebUI.verifyImagePresent()` keyword will always fail to find the image to be present in the page.
+If the target HTML specifies image to be resized like
+
+```<img src="GoogleGLogo-1.png" style="width:25%;" alt="logo">`, then the `WebUI.verifyImagePresent()```
+
+ keyword will always fail to find the image to be present in the page.
 
 
 ## Conclusion
