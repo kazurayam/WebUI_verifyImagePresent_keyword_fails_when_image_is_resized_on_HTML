@@ -161,14 +161,15 @@ Now you should review this design. This design naively assumes that *the origina
 
 If the target HTML specifies image to be resized like
 
-```<img src="GoogleGLogo-1.png" style="width:25%;" alt="logo">`, then the `WebUI.verifyImagePresent()```
-
- keyword will always fail to find the image to be present in the page.
+```
+<img src="GoogleGLogo-1.png" style="width:25%;" alt="logo">
+```
+then the `WebUI.verifyImagePresent() keyword will always fail to find the image to be present in the page.
 
 
 ## Conclusion
 
-In most cases an `<img>` tag has CSS property that specifies the size of the image to be rendered. The `WebUI.verifyImagePresent()` keyword requests you not to resize images at all. Silly request, isn't it? Therefore I would argue that katalon users should not use `WebUI.verifyImagePresent` keyword at all.
+Most probably, an `<img>` tag has a CSS property that resizes image. The `WebUI.verifyImagePresent()` keyword assumes you not to do it! --- I do not think this assumption is practical. Therefore I would argue that katalon users should not use `WebUI.verifyImagePresent` keyword at all.
 
 I haven't checked it but I guess `Mobile.verifyImagePresent` keyword is similar. You shouldn't use it.
 
