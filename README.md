@@ -10,19 +10,22 @@ This project was developed using Katalon Studio v8.3.0 but will work on any vers
 
 This project will demonstrate that `WebUI.verifyImagePresent()' keyword fails
 when an image on HTML is resized by CSS width property.
-This keyword tends to disappoint users who naively expects the keyword work
+This keyword will certainly disappoint users who naively expects the keyword work
 regardless how the image is scaled by CSS.
-Therefore the author argues that users should never use WebUI.verifyImagePresent() keyword.
 
 ## Reproducing problem
 
-This project contains a PNG image named `GoogleGLogo-1.png`, which looks like this: ![logo](GoogleGLogo-1.png)
+### Target HTML Page
 
-This project provides 2 HTML files. One is named `page_with_image_in_original_width.html` which looks like this: ![original](docs/images/original.png). The Logo image is display in its original size.
+This project contains a Google Logo image named `GoogleGLogo-1.png`, which looks like this: ![logo](GoogleGLogo-1.png)
 
-Another is named `page_with_image_resized_quater.html` which looks like this: ![quater](docs/images/quater.png). The Logo image is displayed smaller that its original size.
+This project provides 2 HTML files. One is named `page_with_image_in_original_width.html` where the Logo is display in its original size. It looks like this: ![original](docs/images/original.png)
 
-Please note that both HTML displays the same PNG image file but in different size.
+Another is named `page_with_image_resized_quater.html` where the Logo is displayed smaller that its original size.which looks like this: ![quater](docs/images/quater.png)
+
+Please note that both HTML refers to the same PNG image file but displays it in different size.
+
+### Test Case TC1
 
 I have made 2 Test Case scripts.
 
@@ -56,6 +59,8 @@ WebUI.verifyImagePresent(findTestObject("GoogleLogo"))   // this will pass
 WebUI.closeBrowser()
 ```
 TC1 will pass.
+
+### Test Case TC2
 
 [`TC2`](Scripts/TC2_resized/Script1660742150928.groovy) is almost identical to TC1. The only difference is that TC2 opens the `page_with_image_resized_quater.html` page. **TC2 will always fail**.
 
